@@ -169,16 +169,21 @@ button{font:inherit;color:inherit;}
   font-weight:700;
   letter-spacing:-.01em;
 }
-.nav__mark{
-  width:34px;height:34px;
-  display:grid;place-items:center;
-  border-radius:10px;
-  background:linear-gradient(140deg,var(--accent),#8b5cf6);
-  color:#fff;
-  font-size:.95rem;
-  font-weight:800;
-  box-shadow:0 6px 18px rgba(108,123,255,.35);
+
+.nav__logo{
+  width:40px;
+  height:40px;
+  border-radius:50%;
+  object-fit:cover;
+  border:2px solid var(--line);
+  box-shadow:0 4px 12px rgba(0,0,0,.4);
+  transition:border-color .25s ease,transform .25s ease;
 }
+.nav__brand:hover .nav__logo{
+  border-color:var(--accent-line);
+  transform:scale(1.05);
+}
+
 .nav__name{font-size:1rem;}
 
 .nav__links{
@@ -904,7 +909,7 @@ button{font:inherit;color:inherit;}
 <header class="nav" id="nav">
   <div class="nav__inner">
     <a href="#top" class="nav__brand" aria-label="Makitrux — inicio">
-      <span class="nav__mark" aria-hidden="true">M</span>
+      <img src="logo.jpg" alt="Logo de Makitrux" class="nav__logo">
       <span class="nav__name">Makitrux</span>
     </a>
 
@@ -961,7 +966,7 @@ button{font:inherit;color:inherit;}
   <section class="section section--alt" id="sobre">
     <div class="wrap">
       <div class="section__head reveal">
-        <span class="eyebrow">Sobre mí</s,pan>
+        <span class="eyebrow">Sobre mí</span>
         <h2 class="section__title">Staff y desarrollador de comunidades</h2>
         <p class="section__sub">
           Combino la experiencia del día a día moderando con
@@ -1317,7 +1322,7 @@ button{font:inherit;color:inherit;}
           <div class="contacto__body">
             <p class="contacto__label">Correo</p>
             <p class="contacto__value" title="makitruxz@gmail.com">
-              <a href="mailto:contacto@makitrux.com">makitruxz@gmail.com</a>
+              <a href="mailto:makitruxz@gmail.com">makitruxz@gmail.com</a>
             </p>
             <span class="contacto__hint">Para propuestas y presupuestos</span>
           </div>
